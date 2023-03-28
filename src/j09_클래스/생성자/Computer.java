@@ -6,16 +6,17 @@ public class Computer {
 	String cpu;
 	int ram;
 	String graphic;
-	
+
 	public Computer(int year, String company, String cpu, int ram, String graphic) {
 		
-		this.year = year;
-		this.company = company;
+		this.year = year;				// this = 예약어
+		this.company = company;			
 		this.cpu = cpu;
 		this.ram = ram;
 		this.graphic = graphic;
 		
 	}
+	
 	
 	void showInfo() {
 		

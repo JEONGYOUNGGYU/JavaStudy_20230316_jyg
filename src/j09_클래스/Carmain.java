@@ -42,17 +42,17 @@ public static void main(String[] args) {
 		Car car2 = new Car();
 		Car car3 = new Car();
 		
-		car1.company = "현대";
-		car1.model = "쏘나타";
-		car1.color = "화이트";
-		
-		car2.company = "기아";
-		car2.model = "k5";
-		car2.color = "블랙";
-		
-		car3.company = "현대";
-		car3.model = "아반떼";
-		car3.color = "그레이";
+//		car1.company = "현대";
+//		car1.model = "쏘나타";
+//		car1.color = "화이트";
+//		
+//		car2.company = "기아";
+//		car2.model = "k5";
+//		car2.color = "블랙";
+//		
+//		car3.company = "현대";
+//		car3.model = "아반떼";
+//		car3.color = "그레이";
 		
 		car1.colorChange(2);
 		car1.colorChange(3);
