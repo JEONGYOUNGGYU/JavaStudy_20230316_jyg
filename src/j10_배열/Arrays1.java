@@ -34,6 +34,7 @@ public class Arrays1 {
 	
 		String info3 = "[name=SamSmith, age=3]";
 		System.out.println(info3.substring(6, 14));
+	
 		
 		Student student = new Student("홍길동", 18);
 		Student student2 = new Student("세종대왕", 3);
