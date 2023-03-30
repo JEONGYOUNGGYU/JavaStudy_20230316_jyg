@@ -9,6 +9,7 @@ public class FactoryMain4 {
 		factories[1] = new LGFactory(1);
 		factories[2] = new SamsungFactory(2);
 		factories[3] = new LGFactory(2);
+	
 		
 		System.out.println(factories[0] instanceof SamsungFactory);	// instanceof = 원래 형태에 대해 묻는 것
 		System.out.println(factories[0] instanceof LGFactory);		// 구문 해석 : factories[0]번째가 LGFactory이냐

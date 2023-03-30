@@ -22,32 +22,25 @@ public class Factory5 {
 		
 		Factory[] factories = new Factory[20];
 		
-		
 		for(int i = 0; i < factories.length; i++) {
-			if(i % 2 != 1 || i % 2 != 0) {
-				if(i < 10) {
-					factories[i] = new SamsungFactory(i + 1);
-					factories[i].start();
-					SamsungFactory samsungFactory = (SamsungFactory) factories[i];
-					samsungFactory.produceSmartPhone();
-					factories[i].stop();
-					
-				}
+			if(i % 2 == 0) {
+				factories[i] = new SamsungFactory(i / 2 + 1);			// Upcasting
 			}
-		}
-		for(int i = 0; i< factories.length; i++) {
-			if(i % 2 != 1 || i % 2 != 0) {
-				if(i < 10) {
-					factories[i] = new LGFactory(i + 1);
-					factories[i].start();
-					LGFactory lgFactory = (LGFactory) factories[i];
-					lgFactory.produceSmartTV();
-					factories[i].stop();
-				}
-					
+			else{
+				factories[i] = new LGFactory(i / 2 + 1);
 			}
-		}
 
-	}
+		}
+		for(int i = 0; i < factories.length; i++) {
+			factories[i].start();
+			if(factories[i] instanceof SamsungFactory) {
+				((SamsungFactory)factories[i]).produceSmartPhone();
+			}else {
+				((LGFactory)factories[i]).produceSmartTV();
+			}
+			factories[i].stop();
+			System.out.println();
+		}
+}
 
 }
