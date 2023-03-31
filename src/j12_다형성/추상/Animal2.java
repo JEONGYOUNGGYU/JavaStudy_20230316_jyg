@@ -1,6 +1,7 @@
 package j12_다형성.추상;
 
 public abstract class Animal2 {
+	
 	public abstract void run();
 	// 추상메소드가 하나라도 있으면 추상클래스로 정의
 
