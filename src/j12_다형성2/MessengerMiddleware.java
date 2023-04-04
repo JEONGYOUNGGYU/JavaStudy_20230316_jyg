@@ -1,6 +1,6 @@
 package j12_다형성2;
 
-public class MessengerMiddleware {
+public class MessengerMiddleware {						
 	private Messenger messenger;
 
 	public MessengerMiddleware(Messenger messenger) {

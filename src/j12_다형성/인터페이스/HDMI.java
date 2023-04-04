@@ -18,4 +18,5 @@ public interface HDMI {
 	
 	public int num = 100;		// 초기화를 하면 상수이다.
 	
+//	public default void disConnect1() {}; 일반 메소드 정의 방법 = default 사용
 }

@@ -10,6 +10,7 @@ public class StringBuilder1 {
 		stringBuilder.delete(4, 7);
 		
 		System.out.println(stringBuilder);
+		
 
 	}
 

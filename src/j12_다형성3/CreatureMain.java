@@ -10,13 +10,13 @@ public class CreatureMain {
 		p.attack();
 		p.flyMove(-4, -3);
 		
+		Kevin kevin = new Kevin(0, 0, 12);
+		kevin.printInfo();
 		
-		
-		
-		
-		
-		
-		p.printInfo();
+		kevin.age();
+		kevin.swimDown(-9);
+		kevin.swimDown(-9);
+		kevin.printInfo();
 		
 	}	
 
