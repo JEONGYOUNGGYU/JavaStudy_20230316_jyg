@@ -1,0 +1,12 @@
+1. 구글 lombok 검색
+2. 상단 Download 클릭 후 최신버전 다운
+3. download파일 들어간 후 ctrl + x 눌러 C:\jyg\jyg\data\sts-4.18.0.RELEASE 경로에 붙여넣기
+4. lombok 설치 
+5. springTool 실행
+6. 프로젝트 이름 우클릭 folder 생성 -> 이름은 lib 
+7. lib에 lombok 복붙
+8. 프로젝트 이름 우클릭 properties 클릭
+9. java build path 클릭 -> libraries 클릭
+10. classpath 클릭 -> 오른쪽 add externam JARs..클릭
+11. C:\jyg\jyg\workspace\JavaStudy_20230316_jyg-main\lib 경로 이동 후 lombok 선택 후 열기
+12. apply 
