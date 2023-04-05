@@ -16,6 +16,7 @@ public class BuilderMain {
 				   .company("기아")
 				   .build();
 		
+		System.out.println(car2);
 		System.out.println(car2.getColor());
 		System.out.println(car2.getModel());
 		

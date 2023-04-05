@@ -15,13 +15,14 @@ public class StudentMain {
 		 * 반복문을 통해
 		 * 배열객체 출력(출력은 변수의 값들이 나올 것)
 		 */
-		Student student = new Student("홍길동1");
 		
-		student[0] = student;
+		Student[] students = new Student[10];
 		
-		for(int i = 0; i < student.length; i++) {
-			System.out.println();
-			["홍길동1", "홍길동2"]
+		for(int i = 0; i < students.length; i++) {
+			students[i] = new Student("홍길동" + (i + 1));
+		}
+		for(int i = 0; i < students.length; i++) {
+			System.out.println(students[i]);
 		}
 	}
 
