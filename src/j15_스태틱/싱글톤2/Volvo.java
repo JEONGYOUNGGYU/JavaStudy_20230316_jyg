@@ -6,9 +6,23 @@ public class Volvo {
 	 
 	public int autoCode;
 	
-	public static Volvo() {
+	private Volvo() {
 		Volvo[] volvos = new Volvo[10];
 		autoCode = 20230000;
 	}
+	
+	public static Volvo getinstance() {
+		if(instance == null) {
+			instance = new Volvo();
+			return instance;
+		}
+		return instance;
+	}
+	
+	
+//	public boolean addCar(Truck truck) {
+//		for(int i = 0; i < Volvo[])
+//	}
+	
 }
 
