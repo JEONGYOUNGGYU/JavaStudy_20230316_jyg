@@ -5,6 +5,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import javax.swing.plaf.synth.SynthOptionPaneUI;
+
 import lombok.Getter;
 
 public class StringList {
@@ -139,12 +141,40 @@ public class StringList {
 		//쉼표로 구분해서 roleArray라는 배열에 넣기
 		//배열을 리스트로 만들고 리스트를 반복돌려 하나씩 출력
 		
-		String[] roleArray = new String[] {"USER", "ADMIN", "TEST_USER"};
+		String[] roleArray = new String[3];
+		int a = roles.indexOf(",");
+		roleArray[0] = roles.substring(0, a);
+		int b = roles.indexOf(",", a + 1 );
+		roleArray[1] = roles.substring(a + 1, b);
+		roleArray[2] = roles.substring(b + 1, roles.length());
 		
+		System.out.println(roleArray[0]);
+		System.out.println(roleArray[1]);
+		System.out.println(roleArray[2]);
 		
-//		Arrays.asList(new String[] {"java", "python", "c++", "html"});
+		List<String> list3 = Arrays.asList(roleArray);
+		for(int i = 0; i < list3.size(); i++) {
+			System.out.println(list3.get(i));
+		}
 		
-				
+		System.out.println();
+		for(String str : list3) {
+			System.out.println(str);
+		}
+		
+		System.out.println();
+		System.out.println("<<<<roles2>>>>");
+		String roles2 = "USER,ADMIN,TEST_USER";
+		
+		String[] roleArray2 = roles2.split(",");
+		System.out.println(roleArray2[0]);
+		System.out.println(roleArray2[1]);
+		System.out.println(roleArray2[2]);
+		
+		System.out.println();
+		Arrays.asList(roleArray2).forEach(arg -> {
+			System.out.println("role: " + arg);
+		});
 		
 		
 	}
