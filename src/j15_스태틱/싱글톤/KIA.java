@@ -1,5 +1,10 @@
 package j15_스태틱.싱글톤;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 /*
  * 싱글톤(Singleton)
  * 유일한 객체를 만들어서 공유하는 생성패턴
@@ -9,6 +14,9 @@ package j15_스태틱.싱글톤;
  * 3. instance 변수를 리턴(공유)해줄 getInstance 스태틱 메소드가
  *    필요하다. 
  */
+@Builder
+@AllArgsConstructor
+@Data
 public class KIA { 
 
 	private static KIA instance;

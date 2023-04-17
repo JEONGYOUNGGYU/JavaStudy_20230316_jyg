@@ -1,6 +1,10 @@
 package j17_컬렉션.HashSet;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashSet;
+import java.util.Iterator;
+import java.util.List;
 import java.util.Set;
 
 import j15_스태틱.Student;
@@ -22,13 +26,35 @@ public class StudentHashSet {
 		 *  Set을 반복을 돌려 신동욱을 찾아서 출력하고 삭제.
 		 */
 		
-		Student[] students = new Student [5];
-		students[0] = student1;
-		students[1] = student2;
-		students[2] = student3;
-		students[3] = student4;
-		students[4] = student5;
-		System.out.println(students[0]);
+		Student[] students = {student1, student2, student3, student4, student5};
+		
+		HashSet<Student> studentSet = new HashSet<Student>();
+		
+		studentSet.addAll(Arrays.asList(students));
+		
+		System.out.println(studentSet);
+		System.out.println();
+		
+//		Iterator<Student> ir = studentSet.iterator();
+//		while(ir.hasNext()) {
+//			Student student = ir.next();
+//			if(student.getName().equals("신동욱")) {
+//				System.out.println(student);
+//				ir.remove();
+//				
+//			}
+//		}
+//		System.out.println(studentSet);
+		for(Student student : studentSet) {
+			if(student.getName().equals("신동욱")) {
+				System.out.println(student);
+				studentSet.remove(student);
+				break;
+			}
+			
+		}
+		
+		System.out.println(studentSet);
 		
 	}
 
